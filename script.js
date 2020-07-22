@@ -26,7 +26,7 @@ function getInputValue(id){
 
 function updateSpanText(id,Amount){
     const current = parseFloat(document.getElementById(id).innerText);
-    const total = current + Amount;
+    const total = (current + Amount).toFixed(2);
     document.getElementById(id).innerText = total;
 }
 
