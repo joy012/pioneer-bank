@@ -12,6 +12,7 @@
     <div id="login-area" class="container py-5">
         <h1 class="text-center pb-5">Welcome To Pioneer Bank</h1>
         <div class="submit-area">
+            <h2 class="text-center pt-4 mb-0 pb-0">Login</h2>
             <form class="p-5">
                 <div class="form-group">
                     <label for="account-no">Account Number:</label>
@@ -30,21 +31,21 @@
     <div id="transaction-area" class="container">
         <div class="row">
             <div class="col-md-4">
-                <div class="deposit p-4 m-3 text-center text-white">
+                <div class="deposit p-3 m-3 text-white">
                     <h5>Deposit</h5>
-                    <h2>$00</h2>
+                    <h2>$ <span id="currentDeposit">00</span></h2>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="withdraw p-4 m-3 text-center text-white">
+                <div class="withdraw p-3 m-3 text-white">
                     <h5>Withdraw</h5>
-                    <h2>$00</h2>
+                    <h2>$ <span id="currentWithdraw">00</span></h2>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="balance p-4 m-3 text-center text-white">
+                <div class="balance p-3 m-3 text-white">
                     <h5>Balance</h5>
-                    <h2>$3500</h2>
+                    <h2>$ <span id="currentBalance">3500</span></h2>
                 </div>
             </div>
         </div>
@@ -53,17 +54,17 @@
             <div class="col-md-6 mt-5">
                 <div class="submit-area p-5">
                     <h4>Deposit</h4>
-                    <input class="form-control" type="text" placeholder="$ amount to deposit">
+                    <input id="depositAmount" class="form-control" type="text" placeholder="$ amount to deposit">
                     <br>
-                    <button class="btn btn-success">Deposit</button>
+                    <button id="addDeposit" class="btn btn-success">Deposit</button>
                 </div>
             </div>
             <div class="col-md-6 mt-5">
                 <div class="submit-area p-5">
                     <h4>Withdraw</h4>
-                    <input class="form-control" type="text" placeholder="$ amount to withdraw">
+                    <input id="withdrawAmount" class="form-control" type="text" placeholder="$ amount to withdraw">
                     <br>
-                    <button class="btn btn-success">Withdraw</button>
+                    <button id="cashWithdraw" class="btn btn-success">Withdraw</button>
                 </div>
             </div>
         </div>
